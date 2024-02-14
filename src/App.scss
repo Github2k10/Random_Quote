@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+  font-family: "Outfit", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box{
+  width: 680px;
+  height: auto;
+}
+
+.item{
+  width: 100%;
+  
+  padding: 40px;
+  border-radius: 20px;
+
+  background: #20293a url('./assets/bg-image-random-quote.svg') no-repeat;
+  background-size: cover;
+
+  .item-tags{
+    margin: 20px;
+
+    span{
+      margin: 10px 5px;
+      padding: 5px 10px;
+      font-size: 10px;
+      font-weight: 500;
+
+      color: #6466E9;
+      border-radius: 25px;
+      border: 2px solid #6466E9;
+    }
+  }
+
+  p{
+    font-size: 24px;
+    color: #97A3B6;
+
+    margin: 30px 0px;
+  }
+}
+
+.box-lower{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px;
+
+    img{
+      width: 60px;
+      height: 50px;
+      padding: 5px 10px;
+
+      border: 2px solid #20293A;
+      border-collapse: collapse;
+
+      &:first-child{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+      }
+
+      &:last-child{
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+
+      &:hover{
+        background-color: #20293a;
+      }
+
+      &:active{
+        background-color: #6466E9;
+      }
+    }
+  }
+}
